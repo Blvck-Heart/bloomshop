@@ -324,6 +324,12 @@ footer .mail span {
   font-size: 14px;
 }
 
+footer .address span i,
+footer .phone span i,
+footer .mail span i {
+    margin-right: 10px;
+}
+
 footer .ls .socials {
   margin-top: 24px;
 }
