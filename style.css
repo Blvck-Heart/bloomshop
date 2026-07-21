@@ -52,14 +52,14 @@ nav .ls .logo .c-logo {
 }
 
 nav .ls .contact a {
-    color: var(--color-gray-700);
-    padding: 8px 16px;
-    font-size: 14px;
-    border-radius: 30px;
+  color: var(--color-gray-700);
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 30px;
 }
 
 nav .ls .contact a:hover {
-    background-color: var(--color-gray-300);
+  background-color: var(--color-gray-300);
 }
 
 nav .rs {
@@ -262,7 +262,7 @@ section.stay {
 footer {
   /* display: flex; */
   display: grid;
-  grid-template-columns: repeat(5,1fr);
+  grid-template-columns: repeat(5, 1fr);
   padding: 48px 0px;
   /* justify-content: center; */
   width: 1472px;
@@ -272,7 +272,7 @@ footer {
 }
 
 footer h3 {
-    color: var(--color-gray-700);
+  color: var(--color-gray-700);
 }
 
 footer .ls {
@@ -304,7 +304,9 @@ footer .ls span i {
   color: var(--primary-color);
 }
 
-footer .address, footer .phone, footer .mail {
+footer .address,
+footer .phone,
+footer .mail {
   margin-bottom: 12px;
 }
 
@@ -316,7 +318,6 @@ footer .mail span {
 
 footer .ls .socials {
   margin-top: 24px;
-  
 }
 
 footer .ls .socials i {
@@ -330,27 +331,29 @@ footer .ls .socials span {
   height: 40px;
   border-radius: 50%;
   margin-right: 20px;
-
 }
 
-footer .shop, footer .customer, footer .company, footer .legal {
-    width: 218.67px;
-    line-height: 40px;
+footer .shop,
+footer .customer,
+footer .company,
+footer .legal {
+  width: 218.67px;
+  line-height: 40px;
 }
 
 footer.footer {
-    padding: 24px 0px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: var(--color-gray-400);
+  padding: 24px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--color-gray-400);
 }
 
 footer.footer div span {
-    color: var(--color-gray-700);
+  color: var(--color-gray-700);
 }
 
 footer.footer ul {
-    display: flex;
-    gap: 6px;
+  display: flex;
+  gap: 6px;
 }
