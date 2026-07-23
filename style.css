@@ -23,19 +23,33 @@ body {
   --color-gray-900: #101828;
 }
 
-nav {
+/* NAV STYLE START  */
+
+nav .container {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 20px;
-  position: sticky;
+  padding: 1.5em;
   box-shadow: 1px 0px 4px 5px var(--color-gray-200);
 }
+
+nav .menu #hamburger {
+  display: none;
+}
+
+nav .menu .open,
+nav .menu .close {
+  display: none;
+}
+
+  nav .menu {
+    display: none;
+  }
 
 nav .ls {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 1.875em;
 }
 
 nav .ls .logo a {
@@ -53,9 +67,9 @@ nav .ls .logo .c-logo {
 
 nav .ls .contact a {
   color: var(--color-gray-700);
-  padding: 8px 16px;
-  font-size: 14px;
-  border-radius: 30px;
+  padding: .5em 1em;
+  font-size: 0.875em;
+  border-radius: 1.875em;
 }
 
 nav .ls .contact a:hover {
@@ -65,12 +79,12 @@ nav .ls .contact a:hover {
 nav .rs {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 1.5em;
 }
 
 .search i {
-  padding: 15px;
-  border-radius: 30px;
+  padding: 0.938em;
+  border-radius: 1.875em;
   border: 1px solid var(--color-gray-400);
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -78,9 +92,9 @@ nav .rs {
 }
 
 .search input {
-  padding: 8px;
-  width: 300px;
-  border-radius: 30px;
+  padding: .5em;
+  width: 18.75rem;
+  border-radius: 1.875em;
   border: 1px solid var(--color-gray-400);
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -88,7 +102,7 @@ nav .rs {
 }
 
 nav .cart span {
-  padding: 10px;
+  padding: 0.625em;
   border-radius: 50%;
 }
 
@@ -100,7 +114,7 @@ nav .cart:hover {
 
 nav .sign-btns {
   display: flex;
-  gap: 20px;
+  gap: 1.5em;
 }
 
 nav .sign-btns a {
@@ -113,17 +127,22 @@ nav .sign-btns .sign-in:hover {
 
 nav .sign-btns .sign-up {
   background-color: var(--primary-color);
-  padding: 10px;
-  border-radius: 30px;
+  padding: 0.625em;
+  border-radius: 1.875em;
 }
 
-section {
+/* NAV STYLE END  */
+
+/* section {
   padding: 4rem 0;
-}
+} */
+
+/* HERO STYLE START  */
 
 section .container {
-  width: 1200px;
+  width: 75rem;
   margin: auto;
+  padding: 4em 2em;
 }
 
 section .container .top-side {
@@ -256,10 +275,10 @@ section.stay {
 }
 
 hr {
-    color: var(--color-gray-300);
-    border-top: 0px;
-    border-right: 0px;
-    border-left: 0px;
+  color: var(--color-gray-300);
+  border-top: 0px;
+  border-right: 0px;
+  border-left: 0px;
 }
 
 .b-hr {
@@ -327,7 +346,7 @@ footer .mail span {
 footer .address span i,
 footer .phone span i,
 footer .mail span i {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 footer .ls .socials {
@@ -370,4 +389,112 @@ footer.footer div span {
 footer.footer ul {
   display: flex;
   gap: 6px;
+}
+
+/* MEDIA QUERIES  */
+
+@media screen and (max-width: 480px) {
+
+  nav .container {
+    width: 100%;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 1rem;
+  }
+
+  /* nav .menu {
+    display: flex;
+    gap: 8px;
+  } */
+
+  nav .search i {
+    display: inline-flex;
+  }
+
+  nav .search {
+    display: none;
+  }
+  nav .contact  {
+    display: none;
+  }
+
+  #hambhurger:checked ~ .contact {
+
+  }
+
+
+  hr {
+    width: 30px;
+  }
+
+  section .container {
+    width: 28rem;
+
+    padding: 2em 1em;
+  }
+
+  section .container .top-side {
+    width: 100%;
+    margin-bottom: 4.5em;
+  }
+
+  section .container .top-side h1 {
+    font-size: 2.25rem;
+  }
+
+  section .container .top-side p {
+    font-size: 1rem;
+  }
+
+  section .container .display {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* margin: auto; */
+  }
+
+  section.stay {
+    padding: 3rem;
+    width: 28rem;
+  }
+
+  section.stay .center {
+    width: 100%;
+  }
+
+  section.stay .center h1 {
+    margin-bottom: 1rem;
+  }
+
+  section.stay .center p {
+    margin-bottom: 1.5rem;
+    /* width: 100%; */
+    /* text-align: center; */
+  }
+
+  section.stay .e-mail {
+    width: 100%;
+  }
+
+  /* section.stay .e-mail input {
+    width: 393px;
+  } */
+
+  footer {
+    width: 28rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+
+  footer h3, footer p {
+    font-size: .875rem;
+  }
+
+  footer.footer {
+    width: 28rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
 }
